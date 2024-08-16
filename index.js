@@ -1,4 +1,4 @@
-var msgpack = require("notepack.io");
+var msgpack = require("msgpackr");
 var Emitter = require("component-emitter");
 
 exports.protocol = 5;

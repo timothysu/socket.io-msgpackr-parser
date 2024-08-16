@@ -1,19 +1,19 @@
 {
-  "name": "socket.io-msgpack-parser",
-  "version": "3.0.2",
-  "description": "socket.io parser based on msgpack",
+  "name": "socket.io-msgpackr-parser",
+  "version": "0.0.1",
+  "description": "socket.io parser based on msgpackr",
   "main": "index",
   "types": "./index.d.ts",
   "dependencies": {
-    "component-emitter": "~1.3.0",
-    "notepack.io": "~2.2.0"
+    "component-emitter": "^1.3.1",
+    "msgpackr": "^1.11.0"
   },
   "devDependencies": {
-    "expect.js": "0.3.1",
-    "mocha": "^10.1.0",
-    "prettier": "^2.1.2",
-    "socket.io": "^4.0.1",
-    "socket.io-client": "^4.0.1"
+    "expect.js": "^0.3.1",
+    "mocha": "^10.7.3",
+    "prettier": "^3.3.3",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
   },
   "scripts": {
     "format:check": "prettier --check 'index.js' 'test/**/*.js'",
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/socketio/socket.io-msgpack-parser.git"
+    "url": "git+https://github.com/timothysu/socket.io-msgpackr-parser.git"
   },
-  "author": "Damien Arrachequesne",
+  "author": "Timothy Su",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/socketio/socket.io-msgpack-parser/issues"
+    "url": "https://github.com/timothysu/socket.io-msgpackr-parser/issues"
   },
-  "homepage": "https://github.com/socketio/socket.io-msgpack-parser#readme",
+  "homepage": "https://github.com/timothysu/socket.io-msgpackr-parser#readme",
   "files": [
     "index.js",
     "index.d.ts"

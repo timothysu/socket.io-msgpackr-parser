@@ -4,7 +4,7 @@ const customParser = require("..");
 const expect = require("expect.js");
 const io = require("socket.io");
 const ioc = require("socket.io-client");
-const msgpack = require("notepack.io");
+const msgpack = require("msgpackr");
 
 describe("parser", () => {
   it("allows connection", (done) => {
@@ -157,7 +157,7 @@ describe("parser", () => {
       expect(() => decoder.add(input)).to.throwError(expectedError);
     };
 
-    test(Buffer.from([]), /Could not parse/);
+    test(Buffer.from([]), /Unexpected end of MessagePack data/);
 
     test(msgpack.encode({}), /invalid packet type/);
     test(msgpack.encode({ type: "a" }), /invalid packet type/);

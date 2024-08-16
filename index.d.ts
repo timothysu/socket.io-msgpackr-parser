@@ -1,4 +1,4 @@
-declare module 'socket.io-msgpack-parser' {
+declare module 'socket.io-msgpackr-parser' {
   export class Encoder {
     new()
     encode(packet: any): ArrayBuffer
